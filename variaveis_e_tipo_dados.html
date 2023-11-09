@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>VARIÁVEIS E TIPOS DE DADOS</title>
+</head>
+<body>
+    
+<input id="nome" type="text" placeholder="nome:">
+<br>
+<br>
+<input id="idade" type="number" placeholder="idade:">
+<br>
+<br>
+<input id="estudante" type="text" placeholder="você é um estudante?">
+<br>
+<br>
+<button onclick="ver()">VER TIPO</button>
+
+<h1>dados:</h1>
+<h2>o tipo do nome é: <span id="tiponome"></span></h2>
+<h2>o tipo da idade é: <span id="tipoidade"></span></h2>
+<h2>o tipo do estudante é: <span id="tipoestudante"></span></h2>
+
+
+</body>
+
+<script>
+    function ver(){
+
+        var nome = document.getElementById("nome");
+        var idade = document.getElementById("idade");
+        var estudante = document.getElementById("estudante");
+
+        document.getElementById("tiponome").innerHTML=typeof(nome.value);
+        document.getElementById("tipoidade").innerHTML=typeof(idade.value);
+        document.getElementById("tipoestudante").innerHTML=typeof(estudante.value);
+
+    }
+</script>
+
+</html>

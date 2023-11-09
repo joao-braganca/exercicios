@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funcao</title>
+</head>
+<body>
+
+    <input type="number" id="n1">
+    <br>
+    <input type="number" id="n2">
+
+    <button onclick="comecar()">comecar</button>
+</body>
+
+<script>
+    function comecar(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+
+        maximo(n1,n2);
+    }
+
+    function maximo(n1,n2){
+
+        if(n1>n2){
+            alert(n1 + " é maior que " + n2);
+            return;
+        }
+
+        else{
+            alert(n2 + " é maior que " + n1);
+            return;
+        }
+        
+    }
+</script>
+</html>
